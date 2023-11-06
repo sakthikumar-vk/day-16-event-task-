@@ -1,0 +1,141 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    margin:10px;
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    border: 3px solid black;
+    color: black;
+    padding: 0 50px 50px 50px;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.form-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    border: 3px solid black;
+
+}
+.image-box{
+    border: 3px solid black;
+    display: flex;
+    margin: 30px 50px 50px 50px;
+    padding: 30px;
+}
+img {
+    border: 3px solid;
+    border-radius: 50% ;
+    display: block;
+    /* margin: 20px auto; */
+    line-height: 130px;
+    text-align: center;
+}
+fieldset {
+    border: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+
+.input input {
+    height: 35px;
+    width: 400px;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+.input input:hover, .select select:hover {
+    background-color: antiquewhite;
+    /* border: 2px beige; */
+}
+.select{
+    align-self: flex-start;
+    padding-left: 50px;
+
+}
+.select select {
+    height: 35px;
+    width: 150px;
+    text-align: center;
+    border-radius: 5px;
+    border: 2px solid;
+}
+.right-side .input {
+    padding: 5px;
+}
+ .button {
+    align-self: center;
+    margin: 10px;
+ }
+ .button button {
+    padding: 10px 70px;
+    margin: 0 20px;
+    background-color: #FF5733; /* Set the background color to your desired color */
+    color: white; /* Text color */
+    border: none; /* Remove the default button border */
+    cursor: pointer;
+    border-radius: 5px;
+ }
+ .button button:hover {
+    background-color: green;
+ }
+ @media screen and (max-width:890px) {
+    label {
+        display: block;
+    }
+    fieldset {
+        border: 0;
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        flex-wrap: wrap;
+    }
+    .select{
+        align-self: flex-start;
+        padding-left: 30px;
+    
+    }
+ }
+
+ @media screen and (max-width:700px) {
+    .select{
+        padding-left: 28px;
+    
+    }
+    .button button {
+        height: 50px;
+        padding: 10px 180px;
+        margin: 10px 20px;
+
+     }
+    
+ }
+ @media screen and (max-width:620px) {
+    .select{
+        padding-left: 23px;
+    
+    }
+    .container{
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .form-section {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+        border: none;
+    
+    }
+
+ }
+ 
